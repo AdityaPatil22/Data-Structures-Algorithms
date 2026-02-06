@@ -20,7 +20,6 @@ str.toLowerCase()     // "hello world"
 str.trim()            // removes whitespace from both ends
 str.slice(0, 5);      // "hello"
 str.substring(0, 5);  // "hello"
-str.substr(6, 5);     // "world" (deprecated)
 
 // Searching
 str.indexOf("o");     // 4
@@ -40,3 +39,5 @@ str.split(" ");       // ["hello", "world"]
 // Reversal
 str.split("").reverse().join(""); // "dlrow olleh"
 
+// sort a string alphabetically
+str.split("").sort().join(""); // "dehllloorw"
