@@ -41,3 +41,12 @@ str.split("").reverse().join(""); // "dlrow olleh"
 
 // sort a string alphabetically
 str.split("").sort().join(""); // "dehllloorw"
+
+// Check if string has duplicates
+for (let word of arr) {
+    let set = new Set(word);
+
+    if (set.size !== word.length) {
+        console.log(word, "has duplicates");
+    }
+}
