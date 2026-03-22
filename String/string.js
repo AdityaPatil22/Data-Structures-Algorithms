@@ -50,3 +50,19 @@ for (let word of arr) {
         console.log(word, "has duplicates");
     }
 }
+
+// Rotate a string
+for (let i = 0; i < n; i++) {
+    let n = s1.length;
+    // generate and check all possible rotations of s1
+    for (let i = 0; i < n; i++) {
+        // if current rotation is equal to s2 return true
+        if (s1 === s2) {
+            return true;
+        }
+        // Right rotate s1
+        let last = s1[s1.length - 1];
+        s1 = last + s1.slice(0, s1.length - 1);
+    }
+    return false;
+}
